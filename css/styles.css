@@ -20,6 +20,7 @@ h2 {
 }
 main {
   max-width: 1000px;
+  min-width: 480px;
   margin: 0 auto;
   background: #eee;
   text-align: center;
@@ -34,4 +35,45 @@ section {
 }
 section:hover {
   background: #666;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+	display: inline-block;	
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+	
+	ul {
+    background-color: #043f9e;
+	}
+	
+}
+@media screen and (min-width: 992px) {
+	
+	ul {
+    background-color: #db1848;
+	}
+
 }
